@@ -10,10 +10,9 @@ let submit = document.getElementById('submit');
 let same = document.getElementsByClassName('same');
 
 f.addEventListener('mouseenter',()=>{
-    head.style.color= 'aqua';
+    head.style.color= 'black';
     image.classList.toggle('active');
     f.style.borderColor = "aqua";
-    
 })
 // same.classList.add('same');
 f.addEventListener('mouseleave',()=>{
@@ -59,6 +58,9 @@ function validation(){
         alert("Your form has been submitted successfully ! :)")
         return true;
     }
+}
+if(names.value!=""){
+    names.style.backgroundColor="white";
 }
 
 submit.addEventListener('mouseenter',()=>{
