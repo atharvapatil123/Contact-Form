@@ -29,7 +29,7 @@ app.set('view engine', 'pug');
 app.use(express.urlencoded());
 
 // Set the views directory
-app.set('views',path.join(__dirname,'views'));
+
 
 // Our pug demo endpoint
 // app.get('/', function (req, res) {
